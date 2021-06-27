@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<!--不允许更改Option的Type值！更改将导致错误！-->
+<Set>
+  <Option Type="Provider" Name="指定数据源类型" ID="1">
+    <Provider></Provider>
+  </Option>
+  <Option Type="Server" Name="指定服务器IP地址" ID="2">
+    <Server>118.89.18.226</Server>
+  </Option>
+  <Option Type="DataBase" Name="指定数据库名" Id="3">
+    <DataBase>test</DataBase>
+  </Option>
+  <Option Type="User ID" Name="指定用户名" ID="4">
+  <UserID>root</UserID>
+  </Option>
+  <Option Type="Password" Name="指定通行密码" ID="5">
+  <Password>zxc123456</Password>
+  </Option>
+  <Option Type="Connect Timeout" Name="指定打开数据库的最大等待时间" ID="6">
+  <Connect_Timeout></Connect_Timeout>
+  </Option>
+  <Option Type="Integrated Security" Name="指定是否使用SQL Server的集成安全验证" ID="7">
+  <Integrated_Security>No</Integrated_Security>
+  </Option>
+  <Option Type="Pooling" Name="指定是否启用连接池" ID="8">
+  <Pooling></Pooling>
+  </Option>
+  <Option Type="Max Pool Size" Name="指定连接池最大连接数量" ID="9">
+  <Max_Pool_Size></Max_Pool_Size>
+  </Option>
+  <Option Type="Min Pool Size" Name="指定连接池最小连接数量" ID="10">
+  <Min_Pool_Size></Min_Pool_Size>
+  </Option>
+</Set>

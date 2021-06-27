@@ -1,0 +1,86 @@
+﻿<Window x:Class="科目一模拟考试系统.Conf_Info"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:科目一模拟考试系统"
+        mc:Ignorable="d"
+        Title="Conf_Info" Height="800" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None" Background="{x:Null}" ResizeMode="NoResize" AllowsTransparency="True" Loaded="Window_Loaded" Icon="Resources/Icon.ico">
+    <Grid Margin="0" MouseLeftButtonDown="Grid_MouseLeftButtonDown">
+        <Grid.Background>
+            <ImageBrush ImageSource="Resources/Conf_Info.png"/>
+        </Grid.Background>
+        <Button Content="" HorizontalAlignment="Left" Margin="428,698,0,0" VerticalAlignment="Top" Width="139" Height="48" Click="Cancel_Button_Click" Cursor="Hand" BorderBrush="{x:Null}" Background="#00DDDDDD">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type ButtonBase}">
+                    <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                        <ContentPresenter x:Name="contentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" ContentStringFormat="{TemplateBinding ContentStringFormat}" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsDefaulted" Value="True">
+                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="border" Value="#7F570000"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="#7F570000"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="border" Value="#7F570000"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="#7F570000"/>
+                        </Trigger>
+                        <Trigger Property="ToggleButton.IsChecked" Value="True">
+                            <Setter Property="Background" TargetName="border" Value="#FFBCDDEE"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="#FF245A83"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="border" Value="#FFF4F4F4"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="#FFADB2B5"/>
+                            <Setter Property="Foreground" Value="#FF838383"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="240,698,0,0" VerticalAlignment="Top" Width="139" Height="48" Cursor="Hand" BorderBrush="{x:Null}" Click="BeginTest_Button_Click" Background="#00DDDDDD">
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type ButtonBase}">
+                    <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                        <ContentPresenter x:Name="contentPresenter" ContentTemplate="{TemplateBinding ContentTemplate}" Content="{TemplateBinding Content}" ContentStringFormat="{TemplateBinding ContentStringFormat}" Focusable="False" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Button.IsDefaulted" Value="True">
+                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" TargetName="border" Value="#7F00642E"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="#7F00642E"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" TargetName="border" Value="#7F00642E"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="#7F00642E"/>
+                        </Trigger>
+                        <Trigger Property="ToggleButton.IsChecked" Value="True">
+                            <Setter Property="Background" TargetName="border" Value="#FFBCDDEE"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="#FF245A83"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" TargetName="border" Value="#FFF4F4F4"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="#FFADB2B5"/>
+                            <Setter Property="Foreground" Value="#FF838383"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Image x:Name="GetPhoto" HorizontalAlignment="Left" Height="178" Margin="572,293,0,0" VerticalAlignment="Top" Width="170"/>
+        <Label x:Name="GetName" Content="张三" HorizontalAlignment="Left" Margin="165,286,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" FontFamily="Microsoft YaHei UI Light"/>
+        <Label x:Name="GetSex" Content="男" HorizontalAlignment="Left" Margin="327,286,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" FontFamily="Microsoft YaHei UI Light"/>
+        <Label x:Name="GetAge" Content="20" HorizontalAlignment="Left" Margin="480,286,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" FontFamily="Microsoft YaHei UI Light"/>
+        <Label x:Name="GetNativePlace" Content="广东广州" HorizontalAlignment="Left" Margin="165,360,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" FontFamily="Microsoft YaHei UI Light"/>
+        <Label x:Name="GetNation" Content="汉族" HorizontalAlignment="Left" Margin="480,360,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" FontFamily="Microsoft YaHei UI Light"/>
+        <Label x:Name="GetIDNumber" Content="440981199804105613" HorizontalAlignment="Left" Margin="228,438,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" FontFamily="Microsoft YaHei UI Light"/>
+        <Label x:Name="GetPhoneNumber" Content="13265116996" HorizontalAlignment="Left" Margin="228,516,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" FontFamily="Microsoft YaHei UI Light"/>
+        <Label x:Name="DateLabel" Content="2018-06-25" HorizontalAlignment="Left" Margin="537,516,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" FontFamily="Microsoft YaHei UI Light"/>
+        <Label Content="初次考试" HorizontalAlignment="Left" Margin="170,599,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24" FontFamily="Microsoft YaHei UI Light"/>
+    </Grid>
+</Window>

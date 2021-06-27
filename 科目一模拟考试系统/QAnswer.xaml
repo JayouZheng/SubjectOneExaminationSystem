@@ -1,0 +1,26 @@
+﻿<Window x:Class="科目一模拟考试系统.QAnswer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:科目一模拟考试系统"
+        mc:Ignorable="d"
+        Title="QAnswer" Height="823" Width="960.187" WindowStyle="None" ResizeMode="NoResize" Background="{x:Null}" AllowsTransparency="True" WindowStartupLocation="CenterScreen" Icon="Resources/Icon.ico">
+    <Grid MouseLeftButtonDown="Grid_MouseLeftButtonDown">
+        <Grid.Background>
+            <ImageBrush ImageSource="Resources/QAnswer_New.png"/>
+        </Grid.Background>
+        <TextBlock x:Name="Analysis" HorizontalAlignment="Left" Margin="42,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" FontFamily="Microsoft YaHei UI Light" Foreground="White" Height="598" Width="878" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.091"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.498"/>
+                </TransformGroup>
+            </TextBlock.RenderTransform><Run Text="机动车驾驶人有下列违法行为之一，一次记12分： "/><LineBreak/><Run Text="（一）驾驶与准驾车型不符的机动车的；"/><LineBreak/><Run Text="（二）饮酒后驾驶机动车的；"/><LineBreak/><Run Text="（三）驾驶营运客车（不包括公共汽车）、校车载人超过核定人数20％以上的；"/><LineBreak/><Run Text="（四）造成交通事故后逃逸，尚不构成犯罪的；"/><LineBreak/><Run Text="（五）上道路行驶的机动车未悬挂机动车号牌的，或者故意遮挡、污损、不按规定安装机动车号牌的；"/><LineBreak/><Run Text="（六）使用伪造、变造的机动车号牌、行驶证、驾驶证、校车标牌或者使用其他机动车号牌、行驶证的；"/><LineBreak/><Run Text="（七）驾驶机动车在高速公路上倒车、逆行、穿越中央分隔带掉头的；（八）驾驶营运客车在高速公路车道内停车的；"/><LineBreak/><Run Text="（九）驾驶中型以上载客载货汽车、校车、危险物品运输车辆在高速公路、城市快速路上行驶超过规定时速20％以上或者在高速公路、城市快速路以外的道路上行驶超过规定时速50％以上，以及驾驶其他机动车行驶超过规定时速50%以上的；"/><LineBreak/><Run Text="（十）连续驾驶中型以上载客汽车、危险物品运输车辆超过4小时未停车休息或者停车休息时间少于20分钟的；"/><LineBreak/><Run Text="（十一）未取得校车驾驶资格驾驶校车的。"/></TextBlock>
+        <Label x:Name="RightAnswer" Content="A" HorizontalAlignment="Left" Margin="168,114,0,0" VerticalAlignment="Top" Foreground="Yellow" FontSize="36"/>
+        <Label x:Name="RightAnswer_Content" Content="在应急停车道上停车，等待车辆较少的时候再伺机倒车" HorizontalAlignment="Left" Margin="263,124,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Microsoft YaHei UI Light" FontSize="24"/>
+
+    </Grid>
+</Window>
